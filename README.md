@@ -1,3 +1,9 @@
+![AWS](https://img.shields.io/badge/AWS-Lambda-orange?logo=amazon-aws)
+![Slack](https://img.shields.io/badge/Slack-Integration-blue?logo=slack)
+![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)
+![EventBridge](https://img.shields.io/badge/EventBridge-Triggered-purple)
+![Serverless](https://img.shields.io/badge/Serverless-Automation-success)
+
 # AWS SlackOps — Serverless Alerting & Auto-Remediation System
 
 A fully automated **serverless incident-response pipeline** built on AWS.  
