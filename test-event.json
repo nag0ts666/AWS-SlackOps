@@ -1,0 +1,14 @@
+{
+  "version": "0",
+  "id": "abcd-1234",
+  "detail-type": "EC2 Instance State-change Notification",
+  "source": "aws.ec2",
+  "account": "123456789012",
+  "time": "2025-10-11T00:00:00Z",
+  "region": "us-west-2",
+  "resources": ["arn:aws:ec2:us-west-2:123456789012:instance/i-0abc1234def567890"],
+  "detail": {
+    "instance-id": "i-0abc1234def567890",
+    "state": "stopped"
+  }
+}
