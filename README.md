@@ -1,4 +1,3 @@
-cat > README.md <<'EOF'
 # AWS SlackOps — Serverless Alerting & Auto-Remediation System
 
 A fully automated **serverless incident-response pipeline** built on AWS.  
