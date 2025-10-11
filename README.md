@@ -6,7 +6,7 @@ It detects EC2 instance stoppage events via **Amazon EventBridge**, triggers a *
 
 ---
 
-## 🏗 Architecture Diagram
+## Architecture Diagram
 
 ```mermaid
 graph TD
@@ -17,7 +17,7 @@ graph TD
 
 ---
 
-## ⚙️ Tech Stack
+## Tech Stack
 
 | Component               | Purpose                                          |
 | ----------------------- | ------------------------------------------------ |
@@ -29,7 +29,7 @@ graph TD
 
 ---
 
-## 🧠 Workflow Summary
+## Workflow Summary
 
 1️⃣ **EC2 instance stops** — triggers a state change.  
 2️⃣ **EventBridge** detects the `stopped` state and matches it against the rule.  
@@ -38,9 +38,9 @@ graph TD
 
 ---
 
-## 🧪 Testing the Pipeline
+## Testing the Pipeline
 
-### 1. Manual Invocation (via AWS CLI)
+### Manual Invocation (via AWS CLI)
 You can manually invoke the Lambda function using a sample event payload to validate both remediation and Slack alert delivery:
 
 ````bash
