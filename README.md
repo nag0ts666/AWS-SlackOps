@@ -48,9 +48,26 @@ graph TD
 ### Manual Invocation (via AWS CLI)
 You can manually invoke the Lambda function using a sample event payload to validate both remediation and Slack alert delivery:
 
-````bash
+``bash
 aws lambda invoke \
   --region us-west-2 \
   --function-name SlackOpsAlertLambda \
   --payload fileb://test-event.json \
   response.json
+
+──────────────────────────────────────
+DEPLOYMENT ✔️
+──────────────────────────────────────
+
+**Status:** Functional ✅  
+**Region:** us-west-2  
+**Webhook Verified:** :white_check_mark: SlackOps test message delivered successfully  
+**Lambda → EventBridge Integration:** Established and confirmed  
+
+| Badge | Description |
+|-------|--------------|
+| ![AWS Lambda](https://img.shields.io/badge/AWS-Lambda-orange?logo=awslambda) | Core execution logic |
+| ![EventBridge](https://img.shields.io/badge/AWS-EventBridge-blueviolet?logo=amazoneventbridge) | Detects EC2 stop events |
+| ![Slack API](https://img.shields.io/badge/Slack-Webhook-4A154B?logo=slack) | Sends real-time alerts |
+| ![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python) | Lambda runtime |
+| ![Status](https://img.shields.io/badge/Status-Active-success?style=flat) | Current project state |
