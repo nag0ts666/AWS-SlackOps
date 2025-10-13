@@ -1,4 +1,4 @@
-![AWS](https://img.shields.io/badge/AWS-Lambda-orange?logo=amazon-aws)
+,![AWS](https://img.shields.io/badge/AWS-Lambda-orange?logo=amazon-aws)
 ![Slack](https://img.shields.io/badge/Slack-Integration-blue?logo=slack)
 ![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)
 ![EventBridge](https://img.shields.io/badge/EventBridge-Triggered-purple)
