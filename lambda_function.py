@@ -56,9 +56,21 @@ def lambda_handler(event, context):
 
     restarted = restart_instance(instance_id)
     ts = time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime())
+    region = REGION
     if restarted:
-        msg = f"✅ SlackOps: Auto-remediated EC2 instance *{instance_id}* at {ts} UTC (state=running)."
+        msg = (
+            f":white_check_mark: *SlackOps Alert*\n"
+            f"> **Instance:** `{instance_id}`\n"
+            f"> **Region:** `{region}`\n"
+            f"> **Status:** ✅ *Restarted Successfully*\n"
+            f"> **Timestamp:** {ts} UTC"
+        )
     else:
-        msg = f"❌ SlackOps: Failed to start EC2 instance *{instance_id}* at {ts} UTC."
-    post_to_slack(msg)
-    return {"statusCode": 200 if restarted else 500, "body": msg}
+        msg = (
+            f":x: *SlackOps Alert*\n"
+            f"> **Instance:** `{instance_id}`\n"
+            f"> **Region:** `{region}`\n"
+            f"> **Status:** ❌ *Failed to Restart*\n"
+            f"> **Timestamp:** {ts} UTC"
+        )
+

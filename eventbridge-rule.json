@@ -1,0 +1,10 @@
+{
+  "Name": "EC2StopRule",
+  "EventPattern": {
+    "source": ["aws.ec2"],
+    "detail-type": ["EC2 Instance State-change Notification"],
+    "detail": { "state": ["stopped"] }
+  },
+  "State": "ENABLED",
+  "Description": "Triggers Lambda when an EC2 instance stops"
+}
