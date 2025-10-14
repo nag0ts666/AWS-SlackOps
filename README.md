@@ -64,6 +64,24 @@ DEPLOYMENT ✔️
 **Webhook Verified:** :white_check_mark: SlackOps test message delivered successfully  
 **Lambda → EventBridge Integration:** Established and confirmed  
 
+---
+
+## 📸 Project Demonstration — AWS SlackOps (Automated Incident Response)
+
+This section showcases the end-to-end automation workflow connecting **AWS EC2**, **EventBridge**, **Lambda**, and **Slack**.
+
+| Screenshot | Description |
+|-------------|--------------|
+| ![Lambda Function](screenshots/01-lambda-function-dashboard.png) | **Lambda Function – SlackOpsAlertLambda**<br>Configured to trigger on EC2 stop events and forward alerts to Slack. |
+| ![IAM Role](screenshots/02-iam-role-policy.png) | **IAM Role – SlackOpsLambdaRole**<br>Grants Lambda permissions for EC2 and CloudWatch access. |
+| ![EventBridge Rule](screenshots/03-eventbridge-rule-cli-proof.png) | **EventBridge Rule**<br>CLI output confirming the rule *EC2StopRule* listening for EC2 “stopped” events. |
+| ![CloudWatch Logs](screenshots/04-cloudwatch-log-stream.png) | **CloudWatch Logs**<br>Execution logs verifying Lambda was triggered and Slack message sent successfully. |
+| ![Slack Alert](screenshots/05-slack-alert-message.png) | **Slack Alert Channel – #aws-slackops**<br>Received real-time notification: “:rotating_light: EC2 instance stopped – Auto-remediation triggered.” |
+| ![Architecture](screenshots/06-architecture-diagram.png) | **Architecture Overview**<br>EC2 → EventBridge → Lambda → Slack Webhook pipeline for automated incident alerts. |
+
+---
+
+
 | Badge | Description |
 |-------|--------------|
 | ![AWS Lambda](https://img.shields.io/badge/AWS-Lambda-orange?logo=awslambda) | Core execution logic |
