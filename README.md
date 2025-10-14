@@ -81,7 +81,6 @@ This section showcases the end-to-end automation workflow connecting **AWS EC2**
 
 ---
 
-
 | Badge | Description |
 |-------|--------------|
 | ![AWS Lambda](https://img.shields.io/badge/AWS-Lambda-orange?logo=awslambda) | Core execution logic |
