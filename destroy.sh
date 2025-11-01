@@ -17,4 +17,4 @@ aws iam delete-role-policy --role-name $ROLE_NAME --policy-name SlackOpsPermissi
 echo "[4/4] Deleting IAM role..."
 aws iam delete-role --role-name $ROLE_NAME --region $REGION || true
 
-echo "✅ Cleanup complete."
+echo "Cleanup complete."
