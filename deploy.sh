@@ -66,4 +66,4 @@ aws lambda add-permission \
   --source-arn "$(aws events describe-rule --name EC2StopRule --query 'Arn' --output text)" \
   --region $REGION || true
 
-echo "✅ Deployment complete. Lambda connected to EventBridge."
+echo "Deployment complete. Lambda connected to EventBridge."
