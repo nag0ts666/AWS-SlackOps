@@ -55,18 +55,15 @@ aws lambda invoke \
   --payload fileb://test-event.json \
   response.json
 
-──────────────────────────────────────
-DEPLOYMENT ✔️
-──────────────────────────────────────
 
-**Status:** Functional ✅  
+**Status:** Functional  
 **Region:** us-west-2  
 **Webhook Verified:** :white_check_mark: SlackOps test message delivered successfully  
 **Lambda → EventBridge Integration:** Established and confirmed  
 
 ---
 
-## 📸 Project Demonstration — AWS SlackOps (Automated Incident Response)
+## Project Demonstration — AWS SlackOps (Automated Incident Response)
 
 This section showcases the end-to-end automation workflow connecting **AWS EC2**, **EventBridge**, **Lambda**, and **Slack**.
 
