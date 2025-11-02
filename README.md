@@ -67,14 +67,24 @@ aws lambda invoke \
 
 This section showcases the end-to-end automation workflow connecting **AWS EC2**, **EventBridge**, **Lambda**, and **Slack**.
 
-| Screenshot | Description |
-|-------------|--------------|
-| ![Lambda Function](screenshots/01-lambda-function-dashboard.png) | **Lambda Function – SlackOpsAlertLambda**<br>Configured to trigger on EC2 stop events and forward alerts to Slack. |
-| ![IAM Role](screenshots/02-iam-role-policy.png) | **IAM Role – SlackOpsLambdaRole**<br>Grants Lambda permissions for EC2 and CloudWatch access. |
-| ![EventBridge Rule](screenshots/03-eventbridge-rule-cli-proof.png) | **EventBridge Rule**<br>CLI output confirming the rule *EC2StopRule* listening for EC2 “stopped” events. |
-| ![CloudWatch Logs](screenshots/04-cloudwatch-log-stream.png) | **CloudWatch Logs**<br>Execution logs verifying Lambda was triggered and Slack message sent successfully. |
-| ![Slack Alert](screenshots/05-slack-alert-message.png) | **Slack Alert Channel – #aws-slackops**<br>Received real-time notification: “:rotating_light: EC2 instance stopped – Auto-remediation triggered.” |
-| ![Architecture](screenshots/06-architecture-diagram.png) | **Architecture Overview**<br>EC2 → EventBridge → Lambda → Slack Webhook pipeline for automated incident alerts. |
+### 1️⃣ AWS Lambda Function Overview
+![Lambda Function Overview](https://raw.githubusercontent.com/nag0ts666/AWS-SlackOps/main/screenshots%3A/01-lambda-function-dashboard.png)
+
+### 2️⃣ IAM Role and Permissions
+![IAM Role Policy](https://raw.githubusercontent.com/nag0ts666/AWS-SlackOps/main/screenshots%3A/02-iam-role-policy.png)
+
+### 3️⃣ EventBridge Rule Verification (CLI)
+![EventBridge Rule CLI](https://raw.githubusercontent.com/nag0ts666/AWS-SlackOps/main/screenshots%3A/03-eventbridge-rule-cli-proof.png)
+
+### 4️⃣ CloudWatch Log Stream (Execution Proof)
+![CloudWatch Logs](https://raw.githubusercontent.com/nag0ts666/AWS-SlackOps/main/screenshots%3A/04-cloudwatch-log-stream.png)
+
+### 5️⃣ Slack Alerts (Webhook Output)
+![Slack Alerts](https://raw.githubusercontent.com/nag0ts666/AWS-SlackOps/main/screenshots%3A/05-slack-alert-message.png)
+
+### 6️⃣ Architecture Flow
+![Architecture Diagram](https://raw.githubusercontent.com/nag0ts666/AWS-SlackOps/main/screenshots%3A/06-architecture-diagram.png)
+
 
 ---
 
